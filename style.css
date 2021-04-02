@@ -1,0 +1,285 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: rgba(0, 0, 0, 1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.nav-links {
+  margin-top: 95px;
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+}
+
+.nav-link:hover {
+  background-color: #5e5e5e;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  /* font-weight: bold; */
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1082px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+    font-size: 0.5rem;
+    position: fixed;
+    left: 0px;
+    height: 60vh;
+    top: -0.5%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    opacity: 90%;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
+    z-index: +2;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    margin-left: 3%;
+    display: block;
+    cursor: pointer;
+  }
+
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (max-width: 1200px) {
+  p{
+    font-size: 7%;
+  }
+  .logo {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+
+  .d-inline-block1 {
+    width: 60%;
+    height: 40%;
+  }
+
+  .d-inline-block2 {
+    width: 60%;
+    height: 40%;
+  }
+
+  .loe1 {
+    max-width: 60%;
+    margin-left: 18%;
+    margin-top: -15%;
+    margin-bottom: -15%;
+  }
+
+  .girl-about-us {
+    display: none;
+  }
+
+  .about-us1 {
+    display: block;
+    width: 100%;
+  }
+
+  .btn-lg {
+    display: none;
+  }
+
+  #photo-slider {
+    z-index: -1;
+    width: 100%;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 4rem;
+  }
+  .card{
+      height: 100%;
+      bottom: 50px;
+    }
+    .card-subtitle{
+      font-size: 80%;
+      line-height: 90%;
+    }
+}
+
+.loe1 {
+  width: 90%;
+}
+
+.loe2 {
+  margin-left: 5%;
+  margin-top: 17%;
+  margin-bottom: 20%;
+}
+
+.btn-read-more {
+  font-weight: bold;
+  position: relative;
+  bottom: 5rem;
+  top: -3.7rem;
+  left: 9%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #a9a9a9;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 1200px){
+  .about-us1 {
+    display: none;
+  }
+}
+
+
+.paragraph {
+  width: 70%;
+  text-align: center;
+  align-items: center;
+  margin: 7% 6% 10% 15%;
+}
+
+#photo-slider {
+  z-index: -1;
+  justify-content: center;
+  width: 100%;
+  margin-left: 6%;
+  margin-top: 2%;
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  font-size: 1rem;
+}
+
+.card {
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 16%;
+}
+
+
+.card-text {
+  color: black;
+  text-align: center;
+}
+
+h5 {
+  line-height: 2rem;
+}
+
+.main {
+  width: 90%;
+}
+
+/* .card{
+  margin-left: 70%;
+  position: absolute;
+  bottom: -270%;
+  margin-bottom: 4rem;
+  margin-right: 10%;
+} */
+/* Footer Section */
+#footer {
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: -50px;
+  padding-bottom: 0.1rem;
+  background-color: #a9a9a9;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-text {
+  color: black;
+}
+
+.copyright {
+  margin-top: -3px;
+}
+
+.social-icon {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
